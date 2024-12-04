@@ -227,8 +227,8 @@
 		}
 
 		@media screen and (min-width: 768px) {
-			.top-bar h1 {
-				font-size: 28px;  /* Reduce font size for smaller screens */
+			.top-bar .container {
+				justify-content: space-between;
 			}
 			/* Completely remove settings button */
 			.settings-button {
@@ -248,7 +248,7 @@
 			.menu-options a {
 				color: #005f99; /* Match the title color */
 				text-decoration: none;
-				font-size: 16px;
+				font-size: 18px;
 				transition: color 0.3s ease;
 			}
 
@@ -256,10 +256,15 @@
 				color: #4c9bea; /* Same hover color as call button */
 			}
 
-			/* Move logo and title to the left */
+			/* Keep the logo-title-container centered on large screens */
 			.logo-title-container {
-				margin-right: auto; /* Push logo and title to the left */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 20px; /* Space between logo and title */
+				margin: 0 auto; /* Center it */
 			}
+
 
 			/* Adjust top bar container */
 			.top-bar .container {
