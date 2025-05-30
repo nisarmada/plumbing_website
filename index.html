@@ -436,13 +436,15 @@
         })
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script>
-        // Initialize Supabase Client
-        const SUPABASE_URL = 'https://rftjdldhptpasvxqbjee.supabase.co'; // Your project URL
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmdGpkbGRocHRwYXN2eHFiamVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2MDkwMTcsImV4cCI6MjA2NDE4NTAxN30.AyDpapkOVbPt7WPPtNi0cSLScIeHvKT3_CI7WVc_s'; // Your anon key
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.43.0/dist/umd/supabase.min.js"></script>
 
-        const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+<script>
+	// Initialize Supabase Client
+	console.log('Script is Running!!'); // This should appear FIRST in console logs
+	const SUPABASE_URL = 'https://rftjdldhptpasvxqbjee.supabase.co'; // Your project URL
+	const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmdGpkbGRocHRwYXN2eHFiamVlIiwicmcmFsZSI6ImFub24iLCJpYXQiOjE3NDg2MDkwMTcsImV4cCI6MjA2NDE4NTAxN30.AyDpapkOVbPt7WPPtNi0cSLScIeHvKT3_CI7WVc_s'; // Your anon key
+
+	const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         // Get the form and message element
         const contactForm = document.getElementById('contactForm');
